@@ -2,7 +2,6 @@ const btnEl = document.getElementById('btn');
 const notesDisplayEl = document.getElementById('notesDisplay');
 
 const deleteNote = (id, element) => {
-    console.log(id,element);
     const warning = confirm('Are you sure you want to delete this note?');
     if (warning) {
         const notes = getNotes().filter((note) => note.id != id);
